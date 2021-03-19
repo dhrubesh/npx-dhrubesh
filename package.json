@@ -1,0 +1,40 @@
+{
+  "name": "dhrubesh",
+  "version": "1.6.0",
+  "description": "A personal card for Dhrubesh (@the_Junior_Dev)",
+  "main": "/bin/card.js",
+  "bin": {
+    "dhrubesh": "./bin/card.js"
+  },
+  "homepage": "https://dhrubesh.github.io/",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Dhrubesh (https://dhrubesh.github.io/)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "registry": "https://npm.registry.github.com/"
+  }
+}
